@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niger: Au Cœur du Sahel, Entre Traditions et Désert </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Niamey et Premiers Pas</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Immersion Culturelle et Historique</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Sur les Eaux du Fleuve Niger</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Art, Culture et Saveurs Locales</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Architecture et Vie Quotidienne</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Rencontre avec les Girafes de Kouré</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Journée de Détente et Marché aux Tissus</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Découverte Éducative et Littéraire</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Rythmes et Traditions Musicales</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Projets Sociaux et Solidarité</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Derniers Achats et Flânerie</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Gastronomie et Traditions Culinaires</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Derniers Regards et Soirée d'Adieu</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Départ de Niamey</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">NIGER</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Niger: Au Cœur du Sahel, Entre Traditions et Désert</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ 14 jours</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 4380€</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 Environ 28-35h depuis Gaudin, Haïti avec escales multiples</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Niamey et Premiers Pas</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un long voyage, l'arrivée à Niamey marque le début de votre aventure nigérienne. Prenez le temps de vous installer et de vous imprégner de l'atmosphère locale. Une balade légère autour de votre hôtel vous permettra de découvrir les premières couleurs et sons de la capitale, offrant une transition douce vers le rythme sahélien.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛬 <strong>Arrivée à l'Aéroport Diori Hamani</strong>: Récupérez vos bagages et rejoignez votre hôtel pour vous rafraîchir après le vol. Le transfert est souvent organisé par l'hôtel ou via un taxi pré-réservé.</li><li>🛏️ <strong>Installation à l'hôtel et repos</strong>: Prenez le temps de vous détendre et de vous acclimater au climat et au décalage horaire. Un bon repos est essentiel pour les jours à venir.</li><li>🚶‍♂️ <strong>Balade de découverte légère aux alentours de l'hôtel</strong>: Profitez d'une courte promenade pour observer la vie locale, les marchés de proximité et les premiers visages souriants du Niger.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">L'aéroport de Niamey est petit et facile à naviguer. Prévoyez de la monnaie locale (CFA) pour les petites dépenses.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌡️ Climat</p>
+                                <p class="text-gray-700">Niamey est chaude et ensoleillée. Hydratez-vous régulièrement et portez des vêtements légers et amples.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion Culturelle et Historique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée est dédiée à la découverte du riche patrimoine culturel et historique du Niger. Le Musée National vous offrira un aperçu complet des différentes ethnies et de l'histoire du pays, tandis que le Grand Marché vous plongera au cœur de l'effervescence commerciale nigérienne, un véritable festival de couleurs et de sons.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏛️ <strong>Visite du Musée National du Niger Boubou Hama</strong>: Explorez ce musée unique qui combine un zoo, un village artisanal et des pavillons thématiques sur l'histoire, l'artisanat et la culture nigérienne. C'est une excellente introduction à la diversité du pays.</li><li>🛍️ <strong>Exploration du Grand Marché de Niamey</strong>: Plongez dans l'ambiance vibrante de l'un des plus grands marchés d'Afrique de l'Ouest. Vous y trouverez de tout, des épices aux tissus colorés, en passant par l'artisanat local et les produits frais.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Conseil</p>
+                                <p class="text-gray-700">Au Grand Marché, n'hésitez pas à marchander avec le sourire. C'est une pratique courante et attendue.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Demandez toujours la permission avant de photographier les personnes, surtout dans les marchés.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sur les Eaux du Fleuve Niger</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Le majestueux fleuve Niger est l'artère vitale de la région. Une balade en pirogue vous offrira une perspective unique sur la vie riveraine, les pêcheurs et les oiseaux. L'après-midi sera consacrée à la découverte de l'artisanat local, témoin du savoir-faire ancestral des artisans nigériens.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛶 <strong>Balade en pirogue sur le fleuve Niger</strong>: Embarquez pour une promenade paisible sur le fleuve, observant les scènes de vie quotidienne, les lavandières et les enfants jouant au bord de l'eau. C'est une expérience apaisante et authentique.</li><li>🎨 <strong>Visite du Village Artisanal de Wadata</strong>: Découvrez les ateliers où les artisans travaillent le cuir, le bois, les métaux et les tissus. C'est l'occasion d'acheter des souvenirs uniques et de soutenir l'économie locale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Hydratation</p>
+                                <p class="text-gray-700">Le soleil est intense sur le fleuve. Prévoyez de l'eau en abondance et un chapeau.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">Le village artisanal est idéal pour trouver des cadeaux authentiques et de qualité.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Art, Culture et Saveurs Locales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée est dédiée à l'approfondissement de la culture nigérienne à travers ses expressions artistiques et culinaires. Le Centre Culturel Franco-Nigérien est un lieu d'échange et de création, tandis qu'un atelier de cuisine vous permettra de percer les secrets des saveurs locales et de déguster des plats traditionnels.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🎭 <strong>Visite du Centre Culturel Franco-Nigérien Jean Rouch</strong>: Explorez ce centre dynamique qui propose des expositions d'art, des concerts, des projections de films et des ateliers. C'est un carrefour culturel important à Niamey.</li><li>🍲 <strong>Atelier de cuisine nigérienne</strong>: Participez à un cours de cuisine pour apprendre à préparer des plats typiques comme le djerma, le tô ou le ragoût d'arachide. Une expérience gustative et conviviale garantie.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗓️ Événements</p>
+                                <p class="text-gray-700">Consultez le programme du CCFN pour voir s'il y a des événements spéciaux pendant votre séjour.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌶️ Cuisine</p>
+                                <p class="text-gray-700">La cuisine nigérienne peut être épicée. N'hésitez pas à demander des plats moins relevés si vous êtes sensible.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Architecture et Vie Quotidienne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez l'architecture impressionnante de la Grande Mosquée de Niamey, un symbole de la foi et de l'ingéniosité locale. L'après-midi sera consacrée à une immersion plus profonde dans un quartier résidentiel, vous permettant d'observer la vie quotidienne des habitants et de ressentir le pouls de la ville loin des circuits touristiques habituels.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🕌 <strong>Visite de la Grande Mosquée de Niamey</strong>: Admirez cette magnifique structure architecturale, l'une des plus grandes d'Afrique de l'Ouest. Respectez les codes vestimentaires (épaules et genoux couverts, foulard pour les femmes).</li><li>🚶‍♀️ <strong>Exploration d'un quartier résidentiel local</strong>: Accompagné d'un guide, promenez-vous dans un quartier typique pour observer les interactions sociales, les petits commerces et l'organisation de la vie communautaire. Une immersion authentique.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🙏 Respect</p>
+                                <p class="text-gray-700">Lors de la visite de lieux de culte, le respect et la discrétion sont de mise.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🤝 Interaction</p>
+                                <p class="text-gray-700">Les Nigériens sont très accueillants. Un simple 'Salam Alaikum' ouvre souvent les portes.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Rencontre avec les Girafes de Kouré</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, échappez à l'agitation de la ville pour une rencontre inoubliable avec les dernières girafes d'Afrique de l'Ouest. Ces majestueux animaux vivent en liberté dans la brousse de Kouré, offrant un spectacle émouvant et une opportunité unique d'observer la faune sauvage dans son habitat naturel. Une expérience mémorable au cœur du Sahel.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Excursion à Kouré pour observer les girafes</strong>: Partez tôt le matin pour Kouré, où vous pourrez approcher les girafes de l'Ouest, une sous-espèce unique. Un guide local vous accompagnera pour les repérer et vous donner des informations sur leur conservation.</li><li>🌳 <strong>Pique-nique dans la brousse</strong>: Profitez d'un déjeuner en pleine nature, au milieu des paysages sahéliens, avant de retourner à Niamey en fin d'après-midi.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Sécurité</p>
+                                <p class="text-gray-700">Vérifiez toujours les conditions de sécurité locales avant de vous rendre à Kouré. Un guide expérimenté est indispensable.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection</p>
+                                <p class="text-gray-700">Prévoyez de la crème solaire, un chapeau et des lunettes de soleil, le soleil est très fort en brousse.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Journée de Détente et Marché aux Tissus</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après l'excitation de la rencontre avec les girafes, cette journée est dédiée à la détente et à l'exploration plus tranquille de Niamey. Le matin, vous pourrez vous reposer ou profiter des installations de votre hôtel. L'après-midi sera l'occasion de flâner au marché aux tissus, un véritable kaléidoscope de couleurs et de motifs, parfait pour trouver des étoffes uniques.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏨 <strong>Matinée libre et détente à l'hôtel</strong>: Profitez de la piscine si votre hôtel en dispose, ou simplement d'un moment de calme pour lire et vous ressourcer.</li><li>🧵 <strong>Visite du marché aux tissus de Niamey</strong>: Laissez-vous émerveiller par la profusion de wax, de bazin et d'autres étoffes colorées. C'est l'endroit idéal pour faire confectionner un vêtement sur mesure par un tailleur local.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✂️ Artisanat</p>
+                                <p class="text-gray-700">De nombreux tailleurs proposent de confectionner des vêtements sur mesure en quelques jours. N'hésitez pas à leur demander.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💰 Négociation</p>
+                                <p class="text-gray-700">Le prix des tissus est souvent négociable. Amusez-vous à discuter les tarifs.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Découverte Éducative et Littéraire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée vous invite à explorer un aspect plus intellectuel et éducatif de Niamey. La visite de l'Université Abdou Moumouni vous donnera un aperçu du système éducatif nigérien, tandis que la Bibliothèque Nationale est un havre de paix pour les amateurs de lecture et de recherche. Une approche différente pour comprendre la société nigérienne.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🎓 <strong>Visite de l'Université Abdou Moumouni</strong>: Découvrez le plus grand établissement d'enseignement supérieur du Niger. Observez la vie étudiante et l'architecture des campus.</li><li>📖 <strong>Exploration de la Bibliothèque Nationale du Niger</strong>: Plongez dans les collections de cette bibliothèque qui conserve des documents précieux sur l'histoire et la culture du pays. Un lieu de calme et de savoir.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗣️ Échanges</p>
+                                <p class="text-gray-700">Si l'occasion se présente, engagez la conversation avec des étudiants pour échanger sur leurs perspectives.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🤫 Ambiance</p>
+                                <p class="text-gray-700">La bibliothèque est un lieu de travail. Respectez le silence et la concentration des lecteurs.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Rythmes et Traditions Musicales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">La musique et la danse sont au cœur de la culture nigérienne. Cette journée vous propose une immersion dans ces traditions vibrantes. Que ce soit par la découverte d'instruments traditionnels ou l'assistance à une performance, vous ressentirez l'énergie et la richesse des expressions artistiques locales. Une expérience sensorielle inoubliable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🥁 <strong>Découverte des instruments de musique traditionnels</strong>: Visitez un atelier ou un centre culturel où vous pourrez voir et entendre des instruments comme le gourmi, le molo ou le tindé. Apprenez leur histoire et leur rôle dans la société.</li><li>💃 <strong>Assister à une performance de danse ou de musique traditionnelle</strong>: Si possible, assistez à un spectacle ou une répétition. C'est une occasion unique de voir la passion et le talent des artistes locaux.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎉 Festivités</p>
+                                <p class="text-gray-700">Renseignez-vous sur les éventuelles fêtes ou cérémonies locales qui pourraient inclure des performances.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👂 Écoute</p>
+                                <p class="text-gray-700">Laissez-vous porter par les rythmes envoûtants et les mélodies uniques du Niger.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Projets Sociaux et Solidarité</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée est dédiée à la découverte des initiatives locales qui œuvrent pour le développement et le bien-être des communautés. La visite d'une ONG ou d'un projet communautaire vous offrira un aperçu des défis et des espoirs du Niger, et vous permettra de comprendre l'engagement de ses habitants pour un avenir meilleur. Une expérience enrichissante et humaine.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🤝 <strong>Visite d'une ONG ou d'un projet communautaire local</strong>: Si des contacts peuvent être établis, visitez une organisation travaillant sur l'éducation, la santé ou l'environnement. C'est une façon de voir le Niger sous un angle différent et de comprendre les enjeux sociaux.</li><li>🗣️ <strong>Échanges avec les acteurs locaux</strong>: Discutez avec les responsables et les bénéficiaires des projets pour mieux appréhender leur impact et les défis rencontrés. Une opportunité d'apprentissage et de partage.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✉️ Préparation</p>
+                                <p class="text-gray-700">Ces visites nécessitent souvent une prise de contact préalable. Votre agence ou guide peut vous aider.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💖 Contribution</p>
+                                <p class="text-gray-700">Si vous le souhaitez, renseignez-vous sur les moyens de soutenir ces initiatives de manière éthique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers Achats et Flânerie</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette journée pour revisiter vos lieux préférés, faire les derniers achats de souvenirs ou simplement flâner dans les rues de Niamey. C'est l'occasion de s'imprégner une dernière fois de l'ambiance unique de la ville, de savourer un thé à la menthe et de se remémorer les moments forts de votre voyage.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🎁 <strong>Derniers achats de souvenirs et artisanat</strong>: Retournez au Grand Marché ou au Village Artisanal pour trouver les derniers cadeaux ou objets qui vous rappelleront votre séjour au Niger.</li><li>☕ <strong>Pause thé à la menthe dans un salon local</strong>: Détendez-vous et observez la vie locale en savourant un thé traditionnel, symbole d'hospitalité et de convivialité.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏳ Temps</p>
+                                <p class="text-gray-700">Laissez-vous le temps de vous perdre un peu, c'est souvent là que l'on fait les meilleures découvertes.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💬 Conversation</p>
+                                <p class="text-gray-700">Le thé est un moment de partage. N'hésitez pas à engager la conversation avec les locaux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Gastronomie et Traditions Culinaires</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez plus profondément dans la richesse de la gastronomie nigérienne. Cette journée vous propose une expérience culinaire authentique, que ce soit à travers un cours de cuisine plus approfondi ou la découverte de spécialités locales dans des restaurants typiques. Une véritable fête pour les papilles, qui vous laissera des saveurs mémorables du Niger.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>👨‍🍳 <strong>Cours de cuisine avancé ou découverte de restaurants locaux</strong>: Approfondissez vos connaissances culinaires en apprenant à préparer d'autres plats nigériens, ou explorez les restaurants de Niamey pour goûter des spécialités que vous n'avez pas encore découvertes.</li><li>🥭 <strong>Visite d'un marché de fruits et légumes frais</strong>: Découvrez la diversité des produits locaux, des mangues juteuses aux ignames, et apprenez-en plus sur les ingrédients de base de la cuisine nigérienne.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍎 Saisonnalité</p>
+                                <p class="text-gray-700">Les fruits et légumes varient selon les saisons. Demandez ce qui est de saison pour une fraîcheur optimale.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> hygiene Précautions</p>
+                                <p class="text-gray-700">Privilégiez les fruits que vous pouvez peler vous-même et l'eau en bouteille.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers Regards et Soirée d'Adieu</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette avant-dernière journée pour un dernier regard sur les paysages et l'ambiance de Niamey. Un moment de contemplation au coucher du soleil sur le fleuve Niger sera une conclusion poétique à votre voyage. La soirée sera dédiée à un dîner d'adieu, l'occasion de savourer une dernière fois la cuisine locale et de se remémorer les souvenirs créés.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌅 <strong>Coucher de soleil sur le fleuve Niger</strong>: Trouvez un point de vue agréable le long du fleuve pour admirer les couleurs flamboyantes du coucher de soleil. Un moment de sérénité et de beauté.</li><li>🍽️ <strong>Dîner d'adieu dans un restaurant typique</strong>: Choisissez un restaurant qui vous a plu ou essayez une nouvelle adresse pour un dernier festin nigérien. C'est l'occasion de célébrer votre voyage.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Souvenirs</p>
+                                <p class="text-gray-700">N'oubliez pas votre appareil photo pour immortaliser les magnifiques couchers de soleil africains.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥂 Célébration</p>
+                                <p class="text-gray-700">Profitez de ce dernier repas pour échanger avec vos compagnons de voyage ou votre guide.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Niamey</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après 14 jours riches en découvertes et en émotions, il est temps de dire au revoir au Niger. Profitez d'un dernier petit-déjeuner nigérien avant de vous rendre à l'aéroport. Emportez avec vous les souvenirs des paysages, des saveurs et surtout, de la chaleur humaine des Nigériens, qui resteront gravés dans votre mémoire.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>☕ <strong>Petit-déjeuner à l'hôtel</strong>: Savourez un dernier repas avant de commencer votre voyage de retour.</li><li>🛬 <strong>Transfert à l'aéroport Diori Hamani</strong>: Rejoignez l'aéroport pour votre vol de retour, la tête pleine de souvenirs inoubliables.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Niger-u90ll22wgx40iw8/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Formalités</p>
+                                <p class="text-gray-700">Arrivez à l'aéroport avec suffisamment d'avance pour les formalités d'enregistrement et de sécurité.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Visa</p>
+                                <p class="text-gray-700">Assurez-vous que votre visa est toujours valide jusqu'à votre départ.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>2000€/pers (Vol aller-retour Gaudin, Haïti - Niamey, Niger en classe économique avec escales)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>700€/pers (Taxis à Niamey, voiture avec chauffeur pour Kouré et transferts aéroport)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>490€/pers (Environ 35€/jour pour 14 jours, restaurants locaux et quelques repas plus élaborés)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>910€/pers (13 nuits en hôtel 3 étoiles, environ 70€/nuit)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>280€/pers (Entrées musées, balade en pirogue, atelier cuisine, excursion Kouré)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Les périodes idéales pour ce séjour sont les mois d'octobre à février.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Ces mois correspondent à la saison sèche et plus fraîche, rendant les activités plus agréables.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🌍 Le Niger est un pays du Sahel, majoritairement musulman, avec une population jeune et diverse (Haoussa, Zarma, Touareg, Peul).</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💰 La monnaie est le Franc CFA (XOF). Il est conseillé d'avoir de petites coupures pour les marchés.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🗣️ Le français est la langue officielle, mais de nombreuses langues locales sont parlées. Quelques mots de Haoussa ou Zarma sont appréciés.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🦒 Le Niger est connu pour ses girafes de l'Ouest, une sous-espèce unique, et pour le Festival International de la Mode Africaine (FIMA) qui a lieu sporadiquement.</p>
+                
+            </div>            
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Niger-u90ll22wgx40iw8/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/pays-zones/niger/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 France Diplomatie - Conseils aux voyageurs Niger</strong></a></li>
+                    
+                        <li><a href="https://www.niamey.com/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📰 Niamey.com</strong></a></li>
+                    
+                        <li><a href="https://www.meteofrance.com/previsions-meteo-monde/niamey/61043" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo France - Niamey</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+        
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
