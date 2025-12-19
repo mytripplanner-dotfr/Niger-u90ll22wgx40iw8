@@ -1,0 +1,423 @@
+{
+  "pays": "Niger",
+  "drapeau": "🇳🇪",
+  "symbole": "🐪",
+  "titre": "Niger: Au Cœur du Sahel, Entre Traditions et Désert",
+  "budget_total": "4380€",
+  "duree": "14 jours",
+  "temps_vol": "Environ 28-35h depuis Gaudin, Haïti avec escales multiples",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Niamey et Premiers Pas",
+      "legende": "Après un long voyage, l'arrivée à Niamey marque le début de votre aventure nigérienne. Prenez le temps de vous installer et de vous imprégner de l'atmosphère locale. Une balade légère autour de votre hôtel vous permettra de découvrir les premières couleurs et sons de la capitale, offrant une transition douce vers le rythme sahélien.",
+      "lieu": "Niamey",
+      "activites": [
+        "🛬 <strong>Arrivée à l'Aéroport Diori Hamani</strong>: Récupérez vos bagages et rejoignez votre hôtel pour vous rafraîchir après le vol. Le transfert est souvent organisé par l'hôtel ou via un taxi pré-réservé.",
+        "🛏️ <strong>Installation à l'hôtel et repos</strong>: Prenez le temps de vous détendre et de vous acclimater au climat et au décalage horaire. Un bon repos est essentiel pour les jours à venir.",
+        "🚶‍♂️ <strong>Balade de découverte légère aux alentours de l'hôtel</strong>: Profitez d'une courte promenade pour observer la vie locale, les marchés de proximité et les premiers visages souriants du Niger."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "L'aéroport de Niamey est petit et facile à naviguer. Prévoyez de la monnaie locale (CFA) pour les petites dépenses."
+        },
+        {
+          "symbole": "🌡️",
+          "titre": "Climat",
+          "texte": "Niamey est chaude et ensoleillée. Hydratez-vous régulièrement et portez des vêtements légers et amples."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Immersion Culturelle et Historique",
+      "legende": "Cette journée est dédiée à la découverte du riche patrimoine culturel et historique du Niger. Le Musée National vous offrira un aperçu complet des différentes ethnies et de l'histoire du pays, tandis que le Grand Marché vous plongera au cœur de l'effervescence commerciale nigérienne, un véritable festival de couleurs et de sons.",
+      "lieu": "Niamey",
+      "activites": [
+        "🏛️ <strong>Visite du Musée National du Niger Boubou Hama</strong>: Explorez ce musée unique qui combine un zoo, un village artisanal et des pavillons thématiques sur l'histoire, l'artisanat et la culture nigérienne. C'est une excellente introduction à la diversité du pays.",
+        "🛍️ <strong>Exploration du Grand Marché de Niamey</strong>: Plongez dans l'ambiance vibrante de l'un des plus grands marchés d'Afrique de l'Ouest. Vous y trouverez de tout, des épices aux tissus colorés, en passant par l'artisanat local et les produits frais."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Conseil",
+          "texte": "Au Grand Marché, n'hésitez pas à marchander avec le sourire. C'est une pratique courante et attendue."
+        },
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Demandez toujours la permission avant de photographier les personnes, surtout dans les marchés."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🛶",
+      "titre": "Sur les Eaux du Fleuve Niger",
+      "legende": "Le majestueux fleuve Niger est l'artère vitale de la région. Une balade en pirogue vous offrira une perspective unique sur la vie riveraine, les pêcheurs et les oiseaux. L'après-midi sera consacrée à la découverte de l'artisanat local, témoin du savoir-faire ancestral des artisans nigériens.",
+      "lieu": "Niamey",
+      "activites": [
+        "🛶 <strong>Balade en pirogue sur le fleuve Niger</strong>: Embarquez pour une promenade paisible sur le fleuve, observant les scènes de vie quotidienne, les lavandières et les enfants jouant au bord de l'eau. C'est une expérience apaisante et authentique.",
+        "🎨 <strong>Visite du Village Artisanal de Wadata</strong>: Découvrez les ateliers où les artisans travaillent le cuir, le bois, les métaux et les tissus. C'est l'occasion d'acheter des souvenirs uniques et de soutenir l'économie locale."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "💧",
+          "titre": "Hydratation",
+          "texte": "Le soleil est intense sur le fleuve. Prévoyez de l'eau en abondance et un chapeau."
+        },
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Le village artisanal est idéal pour trouver des cadeaux authentiques et de qualité."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🎭",
+      "titre": "Art, Culture et Saveurs Locales",
+      "legende": "Cette journée est dédiée à l'approfondissement de la culture nigérienne à travers ses expressions artistiques et culinaires. Le Centre Culturel Franco-Nigérien est un lieu d'échange et de création, tandis qu'un atelier de cuisine vous permettra de percer les secrets des saveurs locales et de déguster des plats traditionnels.",
+      "lieu": "Niamey",
+      "activites": [
+        "🎭 <strong>Visite du Centre Culturel Franco-Nigérien Jean Rouch</strong>: Explorez ce centre dynamique qui propose des expositions d'art, des concerts, des projections de films et des ateliers. C'est un carrefour culturel important à Niamey.",
+        "🍲 <strong>Atelier de cuisine nigérienne</strong>: Participez à un cours de cuisine pour apprendre à préparer des plats typiques comme le djerma, le tô ou le ragoût d'arachide. Une expérience gustative et conviviale garantie."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🗓️",
+          "titre": "Événements",
+          "texte": "Consultez le programme du CCFN pour voir s'il y a des événements spéciaux pendant votre séjour."
+        },
+        {
+          "symbole": "🌶️",
+          "titre": "Cuisine",
+          "texte": "La cuisine nigérienne peut être épicée. N'hésitez pas à demander des plats moins relevés si vous êtes sensible."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🕌",
+      "titre": "Architecture et Vie Quotidienne",
+      "legende": "Découvrez l'architecture impressionnante de la Grande Mosquée de Niamey, un symbole de la foi et de l'ingéniosité locale. L'après-midi sera consacrée à une immersion plus profonde dans un quartier résidentiel, vous permettant d'observer la vie quotidienne des habitants et de ressentir le pouls de la ville loin des circuits touristiques habituels.",
+      "lieu": "Niamey",
+      "activites": [
+        "🕌 <strong>Visite de la Grande Mosquée de Niamey</strong>: Admirez cette magnifique structure architecturale, l'une des plus grandes d'Afrique de l'Ouest. Respectez les codes vestimentaires (épaules et genoux couverts, foulard pour les femmes).",
+        "🚶‍♀️ <strong>Exploration d'un quartier résidentiel local</strong>: Accompagné d'un guide, promenez-vous dans un quartier typique pour observer les interactions sociales, les petits commerces et l'organisation de la vie communautaire. Une immersion authentique."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🙏",
+          "titre": "Respect",
+          "texte": "Lors de la visite de lieux de culte, le respect et la discrétion sont de mise."
+        },
+        {
+          "symbole": "🤝",
+          "titre": "Interaction",
+          "texte": "Les Nigériens sont très accueillants. Un simple 'Salam Alaikum' ouvre souvent les portes."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🦒",
+      "titre": "Rencontre avec les Girafes de Kouré",
+      "legende": "Aujourd'hui, échappez à l'agitation de la ville pour une rencontre inoubliable avec les dernières girafes d'Afrique de l'Ouest. Ces majestueux animaux vivent en liberté dans la brousse de Kouré, offrant un spectacle émouvant et une opportunité unique d'observer la faune sauvage dans son habitat naturel. Une expérience mémorable au cœur du Sahel.",
+      "lieu": "Kouré (env. 1h de route de Niamey)",
+      "activites": [
+        "🚗 <strong>Excursion à Kouré pour observer les girafes</strong>: Partez tôt le matin pour Kouré, où vous pourrez approcher les girafes de l'Ouest, une sous-espèce unique. Un guide local vous accompagnera pour les repérer et vous donner des informations sur leur conservation.",
+        "🌳 <strong>Pique-nique dans la brousse</strong>: Profitez d'un déjeuner en pleine nature, au milieu des paysages sahéliens, avant de retourner à Niamey en fin d'après-midi."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Sécurité",
+          "texte": "Vérifiez toujours les conditions de sécurité locales avant de vous rendre à Kouré. Un guide expérimenté est indispensable."
+        },
+        {
+          "symbole": "☀️",
+          "titre": "Protection",
+          "texte": "Prévoyez de la crème solaire, un chapeau et des lunettes de soleil, le soleil est très fort en brousse."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🧘",
+      "titre": "Journée de Détente et Marché aux Tissus",
+      "legende": "Après l'excitation de la rencontre avec les girafes, cette journée est dédiée à la détente et à l'exploration plus tranquille de Niamey. Le matin, vous pourrez vous reposer ou profiter des installations de votre hôtel. L'après-midi sera l'occasion de flâner au marché aux tissus, un véritable kaléidoscope de couleurs et de motifs, parfait pour trouver des étoffes uniques.",
+      "lieu": "Niamey",
+      "activites": [
+        "🏨 <strong>Matinée libre et détente à l'hôtel</strong>: Profitez de la piscine si votre hôtel en dispose, ou simplement d'un moment de calme pour lire et vous ressourcer.",
+        "🧵 <strong>Visite du marché aux tissus de Niamey</strong>: Laissez-vous émerveiller par la profusion de wax, de bazin et d'autres étoffes colorées. C'est l'endroit idéal pour faire confectionner un vêtement sur mesure par un tailleur local."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "✂️",
+          "titre": "Artisanat",
+          "texte": "De nombreux tailleurs proposent de confectionner des vêtements sur mesure en quelques jours. N'hésitez pas à leur demander."
+        },
+        {
+          "symbole": "💰",
+          "titre": "Négociation",
+          "texte": "Le prix des tissus est souvent négociable. Amusez-vous à discuter les tarifs."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "📚",
+      "titre": "Découverte Éducative et Littéraire",
+      "legende": "Cette journée vous invite à explorer un aspect plus intellectuel et éducatif de Niamey. La visite de l'Université Abdou Moumouni vous donnera un aperçu du système éducatif nigérien, tandis que la Bibliothèque Nationale est un havre de paix pour les amateurs de lecture et de recherche. Une approche différente pour comprendre la société nigérienne.",
+      "lieu": "Niamey",
+      "activites": [
+        "🎓 <strong>Visite de l'Université Abdou Moumouni</strong>: Découvrez le plus grand établissement d'enseignement supérieur du Niger. Observez la vie étudiante et l'architecture des campus.",
+        "📖 <strong>Exploration de la Bibliothèque Nationale du Niger</strong>: Plongez dans les collections de cette bibliothèque qui conserve des documents précieux sur l'histoire et la culture du pays. Un lieu de calme et de savoir."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🗣️",
+          "titre": "Échanges",
+          "texte": "Si l'occasion se présente, engagez la conversation avec des étudiants pour échanger sur leurs perspectives."
+        },
+        {
+          "symbole": "🤫",
+          "titre": "Ambiance",
+          "texte": "La bibliothèque est un lieu de travail. Respectez le silence et la concentration des lecteurs."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🎶",
+      "titre": "Rythmes et Traditions Musicales",
+      "legende": "La musique et la danse sont au cœur de la culture nigérienne. Cette journée vous propose une immersion dans ces traditions vibrantes. Que ce soit par la découverte d'instruments traditionnels ou l'assistance à une performance, vous ressentirez l'énergie et la richesse des expressions artistiques locales. Une expérience sensorielle inoubliable.",
+      "lieu": "Niamey",
+      "activites": [
+        "🥁 <strong>Découverte des instruments de musique traditionnels</strong>: Visitez un atelier ou un centre culturel où vous pourrez voir et entendre des instruments comme le gourmi, le molo ou le tindé. Apprenez leur histoire et leur rôle dans la société.",
+        "💃 <strong>Assister à une performance de danse ou de musique traditionnelle</strong>: Si possible, assistez à un spectacle ou une répétition. C'est une occasion unique de voir la passion et le talent des artistes locaux."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🎉",
+          "titre": "Festivités",
+          "texte": "Renseignez-vous sur les éventuelles fêtes ou cérémonies locales qui pourraient inclure des performances."
+        },
+        {
+          "symbole": "👂",
+          "titre": "Écoute",
+          "texte": "Laissez-vous porter par les rythmes envoûtants et les mélodies uniques du Niger."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🌱",
+      "titre": "Projets Sociaux et Solidarité",
+      "legende": "Cette journée est dédiée à la découverte des initiatives locales qui œuvrent pour le développement et le bien-être des communautés. La visite d'une ONG ou d'un projet communautaire vous offrira un aperçu des défis et des espoirs du Niger, et vous permettra de comprendre l'engagement de ses habitants pour un avenir meilleur. Une expérience enrichissante et humaine.",
+      "lieu": "Niamey",
+      "activites": [
+        "🤝 <strong>Visite d'une ONG ou d'un projet communautaire local</strong>: Si des contacts peuvent être établis, visitez une organisation travaillant sur l'éducation, la santé ou l'environnement. C'est une façon de voir le Niger sous un angle différent et de comprendre les enjeux sociaux.",
+        "🗣️ <strong>Échanges avec les acteurs locaux</strong>: Discutez avec les responsables et les bénéficiaires des projets pour mieux appréhender leur impact et les défis rencontrés. Une opportunité d'apprentissage et de partage."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "✉️",
+          "titre": "Préparation",
+          "texte": "Ces visites nécessitent souvent une prise de contact préalable. Votre agence ou guide peut vous aider."
+        },
+        {
+          "symbole": "💖",
+          "titre": "Contribution",
+          "texte": "Si vous le souhaitez, renseignez-vous sur les moyens de soutenir ces initiatives de manière éthique."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🛍️",
+      "titre": "Derniers Achats et Flânerie",
+      "legende": "Profitez de cette journée pour revisiter vos lieux préférés, faire les derniers achats de souvenirs ou simplement flâner dans les rues de Niamey. C'est l'occasion de s'imprégner une dernière fois de l'ambiance unique de la ville, de savourer un thé à la menthe et de se remémorer les moments forts de votre voyage.",
+      "lieu": "Niamey",
+      "activites": [
+        "🎁 <strong>Derniers achats de souvenirs et artisanat</strong>: Retournez au Grand Marché ou au Village Artisanal pour trouver les derniers cadeaux ou objets qui vous rappelleront votre séjour au Niger.",
+        "☕ <strong>Pause thé à la menthe dans un salon local</strong>: Détendez-vous et observez la vie locale en savourant un thé traditionnel, symbole d'hospitalité et de convivialité."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "⏳",
+          "titre": "Temps",
+          "texte": "Laissez-vous le temps de vous perdre un peu, c'est souvent là que l'on fait les meilleures découvertes."
+        },
+        {
+          "symbole": "💬",
+          "titre": "Conversation",
+          "texte": "Le thé est un moment de partage. N'hésitez pas à engager la conversation avec les locaux."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🍽️",
+      "titre": "Gastronomie et Traditions Culinaires",
+      "legende": "Plongez plus profondément dans la richesse de la gastronomie nigérienne. Cette journée vous propose une expérience culinaire authentique, que ce soit à travers un cours de cuisine plus approfondi ou la découverte de spécialités locales dans des restaurants typiques. Une véritable fête pour les papilles, qui vous laissera des saveurs mémorables du Niger.",
+      "lieu": "Niamey",
+      "activites": [
+        "👨‍🍳 <strong>Cours de cuisine avancé ou découverte de restaurants locaux</strong>: Approfondissez vos connaissances culinaires en apprenant à préparer d'autres plats nigériens, ou explorez les restaurants de Niamey pour goûter des spécialités que vous n'avez pas encore découvertes.",
+        "🥭 <strong>Visite d'un marché de fruits et légumes frais</strong>: Découvrez la diversité des produits locaux, des mangues juteuses aux ignames, et apprenez-en plus sur les ingrédients de base de la cuisine nigérienne."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🍎",
+          "titre": "Saisonnalité",
+          "texte": "Les fruits et légumes varient selon les saisons. Demandez ce qui est de saison pour une fraîcheur optimale."
+        },
+        {
+          "symbole": " hygiene",
+          "titre": "Précautions",
+          "texte": "Privilégiez les fruits que vous pouvez peler vous-même et l'eau en bouteille."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🌅",
+      "titre": "Derniers Regards et Soirée d'Adieu",
+      "legende": "Profitez de cette avant-dernière journée pour un dernier regard sur les paysages et l'ambiance de Niamey. Un moment de contemplation au coucher du soleil sur le fleuve Niger sera une conclusion poétique à votre voyage. La soirée sera dédiée à un dîner d'adieu, l'occasion de savourer une dernière fois la cuisine locale et de se remémorer les souvenirs créés.",
+      "lieu": "Niamey",
+      "activites": [
+        "🌅 <strong>Coucher de soleil sur le fleuve Niger</strong>: Trouvez un point de vue agréable le long du fleuve pour admirer les couleurs flamboyantes du coucher de soleil. Un moment de sérénité et de beauté.",
+        "🍽️ <strong>Dîner d'adieu dans un restaurant typique</strong>: Choisissez un restaurant qui vous a plu ou essayez une nouvelle adresse pour un dernier festin nigérien. C'est l'occasion de célébrer votre voyage."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Souvenirs",
+          "texte": "N'oubliez pas votre appareil photo pour immortaliser les magnifiques couchers de soleil africains."
+        },
+        {
+          "symbole": "🥂",
+          "titre": "Célébration",
+          "texte": "Profitez de ce dernier repas pour échanger avec vos compagnons de voyage ou votre guide."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "🛫",
+      "titre": "Départ de Niamey",
+      "legende": "Après 14 jours riches en découvertes et en émotions, il est temps de dire au revoir au Niger. Profitez d'un dernier petit-déjeuner nigérien avant de vous rendre à l'aéroport. Emportez avec vous les souvenirs des paysages, des saveurs et surtout, de la chaleur humaine des Nigériens, qui resteront gravés dans votre mémoire.",
+      "lieu": "Niamey",
+      "activites": [
+        "☕ <strong>Petit-déjeuner à l'hôtel</strong>: Savourez un dernier repas avant de commencer votre voyage de retour.",
+        "🛬 <strong>Transfert à l'aéroport Diori Hamani</strong>: Rejoignez l'aéroport pour votre vol de retour, la tête pleine de souvenirs inoubliables."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Formalités",
+          "texte": "Arrivez à l'aéroport avec suffisamment d'avance pour les formalités d'enregistrement et de sécurité."
+        },
+        {
+          "symbole": "🛂",
+          "titre": "Visa",
+          "texte": "Assurez-vous que votre visa est toujours valide jusqu'à votre départ."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "2000€/pers (Vol aller-retour Gaudin, Haïti - Niamey, Niger en classe économique avec escales)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "700€/pers (Taxis à Niamey, voiture avec chauffeur pour Kouré et transferts aéroport)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "490€/pers (Environ 35€/jour pour 14 jours, restaurants locaux et quelques repas plus élaborés)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "910€/pers (13 nuits en hôtel 3 étoiles, environ 70€/nuit)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "280€/pers (Entrées musées, balade en pirogue, atelier cuisine, excursion Kouré)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois d'octobre à février.",
+      "symbole": "🍁"
+    },
+    {
+      "titre": "Ces mois correspondent à la saison sèche et plus fraîche, rendant les activités plus agréables.",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Le Niger est un pays du Sahel, majoritairement musulman, avec une population jeune et diverse (Haoussa, Zarma, Touareg, Peul).",
+      "symbole": "🌍"
+    },
+    {
+      "titre": "La monnaie est le Franc CFA (XOF). Il est conseillé d'avoir de petites coupures pour les marchés.",
+      "symbole": "💰"
+    },
+    {
+      "titre": "Le français est la langue officielle, mais de nombreuses langues locales sont parlées. Quelques mots de Haoussa ou Zarma sont appréciés.",
+      "symbole": "🗣️"
+    },
+    {
+      "titre": "Le Niger est connu pour ses girafes de l'Ouest, une sous-espèce unique, et pour le Festival International de la Mode Africaine (FIMA) qui a lieu sporadiquement.",
+      "symbole": "🦒"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Informations générales sur le Niger",
+      "titre": "France Diplomatie - Conseils aux voyageurs Niger",
+      "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/pays-zones/niger/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Actualités et informations sur Niamey",
+      "titre": "Niamey.com",
+      "url": "https://www.niamey.com/",
+      "symbole": "📰"
+    },
+    {
+      "legende": "Prévisions météo pour Niamey",
+      "titre": "Météo France - Niamey",
+      "url": "https://www.meteofrance.com/previsions-meteo-monde/niamey/61043",
+      "symbole": "🌤️"
+    }
+  ]
+}
